@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+        .editor-container {
+            display: flex;
+            height: 100vh;
+        }
+        textarea {
+            width: 50%;
+            height: 100%;
+            background-color: #2d2d2d;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            resize: none;
+        }
+        iframe {
+            width: 50%;
+            height: 100%;
+            border: none;
+            background-color: #fff;
+        }
+        .toolbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            z-index: 1000;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .editor-container {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <button onclick="runCode()">Run Code</button>
+    </div>
+    <div class="editor-container">
+        <textarea id="code" placeholder="Write your HTML/CSS/JS code here..."><!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { background: #f0f0f0; font-family: sans-serif; }
+</style>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <script>
+    console.log('Welcome to the code editor!');
+  </script>
+</body>
+</html></textarea>
+        <iframe id="output"></iframe>
+    </div>
+
+    <script>
+        function runCode() {
+            const code = document.getElementById("code").value;
+            const outputFrame = document.getElementById("output");
+            const outputDoc = outputFrame.contentDocument || outputFrame.contentWindow.document;
+            outputDoc.open();
+            outputDoc.write(code);
+            outputDoc.close();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+</head>
+<body>
+    <header>
+        <h1>Education Hub</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="flashcards.html">Flashcards</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="courses.html">Courses</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="flashcards-section" class="feature-section">
+            <div id="course-catalog-page">
+                <h2>📚 Course Catalog</h2>
+
+                <div class="filters">
+                    <select id="topic-filter">
+                    <option value="all">All Topics</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="programming">Programming</option>
+                    </select>
+
+                    <select id="time-filter">
+                    <option value="all">All Durations</option>
+                    <option value="short">Less than 1 hour</option>
+                    <option value="medium">1–3 hours</option>
+                    <option value="long">More than 3 hours</option>
+                    </select>
+                </div>
+
+                <div id="course-list"></div>
+
+
+            <div id="video-player" style="display: none;">
+                <h3>📺 Now Playing: <span id="video-title"></span></h3>
+                <div class="video-wrapper">
+                    <iframe id="course-video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <button onclick="closeVideo()">Close Video</button>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="js/courses.js"></script>
+</body>
+</html>

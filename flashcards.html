@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Education Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+
+    <header>
+        <h1>Education Hub</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="flashcards.html">Flashcards</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="courses.html">Courses</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="flashcards-section" class="feature-section">
+            <h2>Flashcards</h2>
+            
+            <div id="flashcard-container">
+                <div class="flashcard-placeholder">Loading flashcard...</div>
+            </div>
+            <div class="flashcard-controls">
+                <button id="flip-card-btn"class='flipcard-buttons'>Flip Card</button>
+                <button id="know-btn" class="status-btn know flipcard-buttons">I Know</button>
+                <button id="dont-know-btn" class="status-btn dont-know flipcard-buttons">Don't Know</button>
+                <button id="prev-card-btn"class='flipcard-buttons'>Previous Card</button>
+                <button id="next-card-btn"class='flipcard-buttons'>Next Card</button>
+            </div>
+            <div id="flashcard-stats" class="flashcard-stats-display">
+                Card <span id="current-card-number">1</span> of <span id="total-card-number">1</span>
+            </div>
+        </section>
+
+        <!-- <section id="quiz-section" class="feature-section">
+            <h2>Quiz Time!</h2>
+            <div id="quiz-container">
+                
+                <p>Quiz feature coming soon!</p>
+            </div>
+            <button id="start-quiz-btn" style="display:none;">Start Quiz</button>
+            <div id="quiz-score" style="display:none;"></div>
+            <button id="retry-quiz-btn" style="display:none;">Retry Quiz</button>
+        </section>
+
+        
+        <section id="courses-section" class="feature-section">
+            <h2>Course Catalog</h2>
+            <p>Course catalog feature coming soon!</p>
+            
+        </section>
+
+        <section id="habits-section" class="feature-section">
+            <h2>Daily Habits</h2>
+            <p>Daily habit checklist with progress bar coming soon!</p>
+           
+        </section> -->
+
+  
+    </main>
+
+    <footer>
+        <p>© 2025 Your Education Platform</p>
+    </footer>
+
+    <script src="js/flashcard.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

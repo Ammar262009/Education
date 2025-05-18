@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track your Habit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/habit.css">
+</head>
+<body>
+     <header>
+        <h1>Education Hub</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="flashcards.html">Flashcards</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="courses.html">Courses</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="flashcards-section" class="feature-section">
+            <div id="habit-page" >
+            <h2>Daily Habit Checklist</h2>
+            <ul id="habit-list">
+                <li><label><input type="checkbox" class="habit"> Wake up early</label></li>
+                <li><label><input type="checkbox" class="habit"> Exercise</label></li>
+                <li><label><input type="checkbox" class="habit"> Study for 1 hour</label></li>
+                <li><label><input type="checkbox" class="habit"> Drink 2L of water</label></li>
+                <li><label><input type="checkbox" class="habit"> Meditate</label></li>
+            </ul>
+            <div class="progress-container">
+                <div class="progress-bar" id="habit-progress"></div>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    
+<script src="js/habit.js"></script>
+</body>
+</html>
