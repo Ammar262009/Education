@@ -1,0 +1,28 @@
+.container{
+    margin-top:23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:12px;
+    max-width:80%;
+    margin:3rem auto 3rem auto;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:50px;
+    border-radius: 18px;
+    min-width:100px;
+    padding:2rem;
+    background-color:var(--card-background);
+    color: var(--primary-color);
+    cursor:pointer;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
